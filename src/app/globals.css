@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -14,9 +14,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #b82929;
+    --foreground: #ffffff;
   }
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground : white;
+}
+
+[data-theme='light'] {
+  --background: black;
+  --foreground : black;
+}
+
+.profile-pic-parent {
+	position: relative;
+	top: 120px;
+	left: 120px;
+}
+
+.profile-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 body {
